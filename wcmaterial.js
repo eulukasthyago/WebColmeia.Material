@@ -1,17 +1,20 @@
-(function(wcdatacont){
-    let wcdata = document.querySelectorAll("[wcdata]");
-    
-    for(let i in radiusquad){
-        alert("a");
-    }
-
-});
-
+//(function(wcdatacont){
+//    let wcdata = document.querySelectorAll("[wcdata]");
+//
+//    for(let i in radiusk i  ic1quad){
+//        alert("a");
+//    }
+//
+//});
 window.onload = function(){
-    let wcdata = document.querySelectorAll("[wcdata]");
-    console.log();
+    let wcdataAll = document.querySelectorAll("[wcdata]");
     
-    for(let i = 0; i < wcdata.length; i++){
-        wcdata[i];
+    for(let i = 0; i < wcdataAll.length; i++){
+        let wcdata = JSON.parse(wcdataAll[i].getAttribute("wcdata"));
+        for(let a in wcdata){
+            if(wcdata[a] === true){
+                wcdataAll[i].classList.add(a);
+            }
+        }
     }
-}
+};
