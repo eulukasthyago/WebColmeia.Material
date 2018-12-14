@@ -1,0 +1,26 @@
+{
+  "name": "webcolmeia.material",
+  "version": "0.0.1",
+  "description": "Criar layout com o novo material design",
+  "main": "wcmaterial.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eulukasthyago/WebColmeia.Material.git"
+  },
+  "keywords": [
+    "Material",
+    "design",
+    "google",
+    "material",
+    "design"
+  ],
+  "author": "Lucas Tiago",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eulukasthyago/WebColmeia.Material/issues"
+  },
+  "homepage": "https://github.com/eulukasthyago/WebColmeia.Material#readme"
+}
