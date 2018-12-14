@@ -1,8 +1,3 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
 /* 
     Created on : 25/11/2018, 18:15:59
     Author     : eulukasthyago
@@ -30,4 +25,35 @@ and open the template in the editor.
 
 .borderradius{
     border-radius: 5px;
+}
+
+.radiuscircle{
+    width: 577px;
+    height: 265px;
+    overflow: hidden;
+    position: relative;
+    background: #fff;
+    border-top-left-radius: 50px !important;
+    filter: drop-shadow(0px 0px 3px rgba(0,0,0,0.3));
+}
+
+.radiusinnercircle{
+    width: 577px;
+    height: 265px;
+    overflow: hidden;
+    position: relative;
+    filter: drop-shadow(0px 0px 3px rgba(0,0,0,0.3));
+}
+
+.radiusinnercircle:before{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transform: rotate(-45deg) translate(-5%, -95%);
+    box-shadow: 0 0 0px 5000px #fff;
+    border-radius: 100%;
 }
