@@ -2,59 +2,162 @@
     Created on : 25/11/2018, 18:15:59
     Author     : eulukasthyago
     E-mial     : eulukasthyago@outlook.com
+    Version    : 0.0.1
 */
-
-.radiusquad{
-    width: 577px;
-    height: 265px;
-    overflow: hidden;
-    position: relative;
-    filter: drop-shadow(0px 0px 3px rgba(0,0,0,0.3));
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-.radiusquad:before{
-    content: '';
-    display: block;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    transform: rotate(-45deg) translate(-5%, -95%);
-    box-shadow: 0 0 0px 5000px #fff;
+/* Area Test */
+body {
+  background: #f3f3f3;
+  padding: 20px;
 }
 
-.borderradius{
-    border-radius: 5px;
+/* Area Test - FIM */
+.radiusquad {
+  overflow: hidden;
+  position: relative;
+  filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.3));
 }
 
-.radiuscircle{
-    width: 577px;
-    height: 265px;
-    overflow: hidden;
-    position: relative;
-    background: #fff;
-    border-top-left-radius: 50px !important;
-    filter: drop-shadow(0px 0px 3px rgba(0,0,0,0.3));
+.radiusquad:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  transform: rotate(-45deg) translate(-5%, -95%);
+  box-shadow: 0 0 0px 5000px #fff;
+  z-index: -1;
 }
 
-.radiusinnercircle{
-    width: 577px;
-    height: 265px;
-    overflow: hidden;
-    position: relative;
-    filter: drop-shadow(0px 0px 3px rgba(0,0,0,0.3));
+.borderradius {
+  border-radius: 5px;
 }
 
-.radiusinnercircle:before{
-    content: '';
-    display: block;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    transform: rotate(-45deg) translate(-5%, -95%);
-    box-shadow: 0 0 0px 5000px #fff;
-    border-radius: 100%;
+.radiuscircle {
+  width: 577px;
+  height: 265px;
+  overflow: hidden;
+  position: relative;
+  background: #fff;
+  border-top-left-radius: 50px !important;
+  filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.3));
+  padding-left: 20px;
+  padding-top: 20px;
 }
+
+.radiusinnercircle {
+  width: 577px;
+  height: 265px;
+  overflow: hidden;
+  position: relative;
+  padding-left: 20px;
+  filter: drop-shadow(0px 0px 3px rgba(0, 0, 0, 0.3));
+}
+
+.radiusinnercircle:before {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  transform: rotate(-45deg) translate(-5%, -95%);
+  box-shadow: 0 0 0px 5000px #fff;
+  border-radius: 100%;
+}
+
+.btncircle {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 20px;
+  border-radius: 100%;
+}
+
+.btncircle i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+.floating_left_top {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  background: #fff;
+  margin: 20px;
+}
+
+.floating_left_bottom {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  background: #fff;
+  margin: 20px;
+}
+
+.floating_right_top {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  background: #fff;
+  margin: 20px;
+}
+
+.floating_right_bottom {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+  background: #fff;
+  margin: 20px;
+}
+
+.shadowposition1 {
+  box-shadow: 0 1px 1.5px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.24);
+}
+
+.shadowposition2 {
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 5px 0 rgba(0, 0, 0, 0.23);
+}
+
+.shadowposition3 {
+  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.19), 0 6px 3px 0 rgba(0, 0, 0, 0.23);
+}
+
+.shadowposition4 {
+  box-shadow: 0 14px 14px 0 rgba(0, 0, 0, 0.25), 0 10px 5px 0 rgba(0, 0, 0, 0.22);
+}
+
+.shadowposition5 {
+  box-shadow: 0 19px 19px 0 rgba(0, 0, 0, 0.3), 0 15px 6px 0 rgba(0, 0, 0, 0.22);
+}
+
+.spacecontent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  clear: both;
+  z-index: 3;
+}
+
+.row_title {
+  position: relative;
+  width: 100%;
+  padding: 50px 30px 30px;
+}
+
+/*# sourceMappingURL=wcmaterial.css.map */
