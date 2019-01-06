@@ -13,6 +13,6 @@ Comando implementado:
 {"borderradius": true} // Faz com que todo os cantos do elemento fique com uma borda arredondada.
 {"btncircle": true} // Transforma o elemento em um botão arredondado
 {"icon":"iconname"} // adociona icone ao elemento
-{"shadowposition": 1...5} // Define a denciade da sombra
+{"shadowposition": 1...5} // Define a dencidade da sombra
 ```
 

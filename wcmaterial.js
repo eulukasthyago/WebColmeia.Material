@@ -41,6 +41,10 @@ window.onload = function(){
             	}else{
 					wcdataAll[i].classList.add('shadowposition1');
             	}
+            }else if(a === "row"){
+            	if (wcdata[a] === "title") {
+					wcdataAll[i].classList.add(a + '_title');
+				}
             }
         }
         wcdataAll[i].removeAttribute("wcdata");
